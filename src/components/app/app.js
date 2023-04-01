@@ -6,27 +6,27 @@ import SearchPanel from '../search-panel/search-panel';
 
 import './app.css';
 
-  const data = [
-    {name: 'John C.', salary: 800, increase: true, id:1},
-    {name: 'Alex', salary: 1000, increase: false, id:2},
-    {name: 'Carl L.', salary: 3000, increase: true, id:3}
-  ]
+const data = [
+  { name: 'John C.', salary: 800, increase: true, id: 1 },
+  { name: 'Alex', salary: 1000, increase: false, id: 2 },
+  { name: 'Carl L.', salary: 3000, increase: true, id: 3 }
+]
 
-  function App() {
-    return (
-      <div className="app">
-        <AppInfo />
+function App() {
+  return (
+    <div className="app">
+      <AppInfo />
 
-        <div className="search-panel">
-          <SearchPanel />
-          <AppFilter />
-        </div>
-
-        <EmployeesList data={data} />
-        <EmployeesAddForm />
+      <div className="search-panel">
+        <SearchPanel />
+        <AppFilter />
       </div>
-    )
-  }
+
+      <EmployeesList data={data} />
+      <EmployeesAddForm />
+    </div>
+  )
+}
 
 
-  export default App
+export default App
